@@ -1,0 +1,14 @@
+body{
+    margin: 20px;
+}
+
+.infos{
+ position: absolute;
+ width: 30%;
+ height: 100%;
+ left: 30%;
+}
+
+.txt{
+    word-wrap: break-word;
+}
