@@ -1,0 +1,111 @@
+/* Bendri nustatymai */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background: linear-gradient(120deg, #004aad, #00aaff);
+    scroll-snap-align: start;
+    padding: 20px;
+}
+
+.slide:nth-child(2) {
+    background: linear-gradient(120deg, #6a0572, #c0569d);
+}
+
+.slide:nth-child(3) {
+    background: linear-gradient(120deg, #009688, #35a79c);
+}
+
+.slide:nth-child(4) {
+    background: linear-gradient(120deg, #ff5722, #ff7043);
+}
+
+.content {
+    max-width: 800px;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #004aad;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: #004aad;
+    color: #ffffff;
+}
+
+/* Slankiojimas tarp skaidrių */
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+body {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+/* Datos ir citatos stilius */
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.slide p span {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.qoute {
+    font-style: italic;
+    color: #e0e0e0;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+ul li:before {
+    content: "✔";
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
